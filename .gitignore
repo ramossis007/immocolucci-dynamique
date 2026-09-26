@@ -1,0 +1,42 @@
+# Fichiers d'environnement (SECRETS)
+.env
+.env.local
+.env.*.local
+*.env
+
+# Deep Copilot (config locale VS Code)
+.deep-copilot/
+
+# Uploads utilisateurs
+public/assets/img/uploads/*
+!public/assets/img/uploads/.gitkeep
+
+# Storage (cache, throttle, logs)
+app/storage/throttle/*
+app/storage/logs/*
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE / Éditeurs
+.vscode/
+.idea/
+*.sublime-*
+
+# Fichiers temporaires / backups
+*.tmp
+*.bak
+*.backup
+New Text Document.txt
+*~
+
+# Dépendances (si Composer plus tard)
+/vendor/
+composer.lock
+node_modules/
+
+# Scripts temporaires
+reset_admin_password.php
+test-db.php

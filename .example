@@ -1,0 +1,9 @@
+APP_DEBUG=0
+SITE_URL=https://www.immocolucci.ma
+
+DB_HOST=localhost
+DB_NAME=immocolucci
+DB_USER=root
+DB_PASS=
+
+OPENAI_API_KEY=

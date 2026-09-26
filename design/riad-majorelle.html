@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Villa Océane - Founty, Agadir | Immo Colucci</title>
+
+    <meta name="description" content="Villa Océane à Founty, Agadir. Villa contemporaine de 380 m² avec vue sur l'océan. 5 chambres, piscine et jardin luxuriant. Vente : 4 800 000 DH." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ====== HEADER ====== -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Immo<span>Colucci</span></h1>
+                <p class="logo-tagline">Immobilier &amp; Conciergerie</p>
+            </div>
+            <nav class="nav" id="mainNav">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html#properties">Biens</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                    <li><a href="index.html#about">À propos</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- ====== BANNIERE DU BIEN ====== -->
+        <section style="padding: 150px 0 60px 0; background: var(--light-gray);">
+            <div class="container">
+                <div style="max-width: 1100px; margin: 0 auto;">
+
+                    <nav style="font-size: 0.85rem; color: var(--gray); margin-bottom: 20px;">
+                        <a href="index.html" style="color: var(--gold);">Accueil</a>
+                        <span style="margin: 0 8px;">/</span>
+                        <a href="index.html#properties" style="color: var(--gold);">Nos biens</a>
+                        <span style="margin: 0 8px;">/</span>
+                        <span style="color: var(--dark-light); font-weight: 500;">Villa Océane</span>
+                    </nav>
+
+                    <div style="display: grid; grid-template-columns: 1.6fr 1fr; gap: 40px; margin-bottom: 40px;">
+                        <div>
+                            <img src="https://picsum.photos/seed/villaOceaneMain/800/500" alt="Villa Océane - Founty, Agadir" style="width:100%; border-radius: 12px; box-shadow: var(--shadow); margin-bottom: 15px; height: 350px; object-fit: cover;" />
+                            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;">
+                                <img src="https://picsum.photos/seed/villaOceane1/300/200" alt="Piscine villa" style="width:100%; border-radius: 8px; height: 80px; object-fit: cover; cursor: pointer; border: 2px solid transparent; transition: var(--transition);" onmouseover="this.style.borderColor='var(--gold)'" onmouseout="this.style.borderColor='transparent'" />
+                                <img src="https://picsum.photos/seed/villaOceane2/300/200" alt="Salon villa" style="width:100%; border-radius: 8px; height: 80px; object-fit: cover; cursor: pointer; border: 2px solid transparent; transition: var(--transition);" onmouseover="this.style.borderColor='var(--gold)'" onmouseout="this.style.borderColor='transparent'" />
+                                <img src="https://picsum.photos/seed/villaOceane3/300/200" alt="Cuisine équipée" style="width:100%; border-radius: 8px; height: 80px; object-fit: cover; cursor: pointer; border: 2px solid transparent; transition: var(--transition);" onmouseover="this.style.borderColor='var(--gold)'" onmouseout="this.style.borderColor='transparent'" />
+                                <img src="https://picsum.photos/seed/villaOceane4/300/200" alt="Jardin luxuriant" style="width:100%; border-radius: 8px; height: 80px; object-fit: cover; cursor: pointer; border: 2px solid transparent; transition: var(--transition);" onmouseover="this.style.borderColor='var(--gold)'" onmouseout="this.style.borderColor='transparent'" />
+                            </div>
+                        </div>
+
+                        <div style="background: var(--white); padding: 35px; border-radius: 12px; box-shadow: var(--shadow); display: flex; flex-direction: column; justify-content: space-between;">
+                            <div>
+                                <span style="background: var(--gold); color: var(--dark); padding: 5px 15px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Vente</span>
+                                <h1 style="font-family: var(--font-serif); font-size: 2.2rem; margin: 15px 0 5px;">Villa Océane</h1>
+                                <p style="color: var(--gray); margin-bottom: 15px;"><i class="fas fa-map-pin" style="color: var(--gold);"></i> Founty, Agadir</p>
+                                <p style="font-size: 2.2rem; font-family: var(--font-serif); color: var(--gold); font-weight: 600; margin-bottom: 20px;">4 800 000 DH</p>
+                                
+                                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; border-top: 1px solid #eee; padding-top: 20px;">
+                                    <div><i class="fas fa-bed" style="color: var(--gold); width: 20px;"></i> <strong>5</strong> chambres</div>
+                                    <div><i class="fas fa-bath" style="color: var(--gold); width: 20px;"></i> <strong>4</strong> salles de bain</div>
+                                    <div><i class="fas fa-vector-square" style="color: var(--gold); width: 20px;"></i> <strong>380</strong> m² habitables</div>
+                                    <div><i class="fas fa-ruler-combined" style="color: var(--gold); width: 20px;"></i> <strong>800</strong> m² de terrain</div>
+                                    <div><i class="fas fa-swimming-pool" style="color: var(--gold); width: 20px;"></i> Piscine privée</div>
+                                    <div><i class="fas fa-car" style="color: var(--gold); width: 20px;"></i> Garage 2 voitures</div>
+                                </div>
+                            </div>
+
+                            <div style="margin-top: 25px; display: flex; gap: 12px; flex-wrap: wrap;">
+                                <a href="#contact-bien" class="btn-primary" style="flex:1; text-align: center;">
+                                    <i class="fas fa-phone-alt"></i> Demander une visite
+                                </a>
+                                <a href="javascript:void(0)" style="flex:1; text-align: center; background: transparent; border: 2px solid var(--dark); color: var(--dark); padding: 14px; border-radius: 6px; font-weight: 500; transition: var(--transition);">
+                                    <i class="fas fa-heart" style="color: var(--gold);"></i> Favoris
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DESCRIPTION -->
+                    <div style="background: var(--white); padding: 50px; border-radius: 12px; box-shadow: var(--shadow); margin-bottom: 40px;">
+                        <h2 style="font-family: var(--font-serif); font-size: 2rem; margin-bottom: 25px;">Présentation de la propriété</h2>
+                        
+                        <div style="font-size: 1.05rem; line-height: 1.9; color: var(--dark-light);">
+                            <p style="font-size: 1.2rem; font-weight: 500; color: var(--dark);">
+                                <i class="fas fa-quote-left" style="color: var(--gold); margin-right: 10px;"></i>
+                                Une villa d'exception située dans le quartier résidentiel de Founty, à quelques pas de la plage et des commodités.
+                            </p>
+                            <p>
+                                La <strong>Villa Océane</strong> incarne le luxe contemporain dans l'un des secteurs les plus prisés d'Agadir. Construite sur un terrain de 800 m², elle offre une surface habitable de 380 m², répartis en deux niveaux lumineux et élégants.
+                            </p>
+                            <p>
+                                Dès l'entrée, un hall majestueux ouvre sur un vaste salon-séjour baigné de lumière, avec de grandes baies vitrées offrant une vue imprenable sur la piscine et le jardin luxuriant. La cuisine, entièrement équipée, est dotée d'un îlot central et de matériaux haut de gamme (granit et bois laqué).
+                            </p>
+                            <p>
+                                Le rez-de-chaussée abrite également une chambre d'amis avec salle d'eau privative, idéale pour recevoir des invités ou pour une personne à mobilité réduite. À l'étage, quatre chambres spacieuses, dont une suite parentale avec dressing et terrasse privée, offrent des espaces de vie intimistes et confortables.
+                            </p>
+                            <p>
+                                L'extérieur est un véritable havre de paix : une piscine à débordement, une terrasse en bois exotique, un bassin de nage et un jardin méditerranéen planté de palmiers et d'oliviers. Le tout dans un environnement calme et sécurisé, à seulement 5 minutes à pied de la promenade de Founty et de ses restaurants branchés.
+                            </p>
+                            <p style="font-style: italic; color: var(--gold); border-left: 4px solid var(--gold); padding-left: 20px; margin-top: 20px;">
+                                "La Villa Océane, c'est la promesse d'un art de vivre méditerranéen, alliant modernité, raffinement et sérénité."
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- ÉQUIPEMENTS ET PROXIMITÉS -->
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 40px;">
+                        <div style="background: var(--white); padding: 35px; border-radius: 12px; box-shadow: var(--shadow);">
+                            <h3 style="font-family: var(--font-serif); font-size: 1.8rem; margin-bottom: 20px;"><i class="fas fa-list-ul" style="color: var(--gold);"></i> Équipements</h3>
+                            <ul style="list-style: none; padding: 0; line-height: 2.2;">
+                                <li><i class="fas fa-check-circle" style="color: var(--gold); margin-right: 10px;"></i> Climatisation réversible (gainable)</li>
+                                <li><i class="fas fa-check-circle" style="color: var(--gold); margin-right: 10px;"></i> Chauffage au sol dans les salles de bain</li>
+                                <li><i class="fas fa-check-circle" style="color: var(--gold); margin-right: 10px;"></i> Piscine à débordement chauffée</li>
+                                <li><i class="fas fa-check-circle" style="color: var(--gold); margin-right: 10px;"></i> Système d'alarme et vidéosurveillance</li>
+                                <li><i class="fas fa-check-circle" style="color: var(--gold); margin-right: 10px;"></i> Portail électrique avec interphone</li>
+                                <li><i class="fas fa-check-circle" style="color: var(--gold); margin-right: 10px;"></i> Cuisine équipée (four, plaque induction, hotte)</li>
+                                <li><i class="fas fa-check-circle" style="color: var(--gold); margin-right: 10px;"></i> Cellier et buanderie séparés</li>
+                                <li><i class="fas fa-check-circle" style="color: var(--gold); margin-right: 10px;"></i> Double vitrage et isolation phonique</li>
+                            </ul>
+                        </div>
+                        <div style="background: var(--white); padding: 35px; border-radius: 12px; box-shadow: var(--shadow);">
+                            <h3 style="font-family: var(--font-serif); font-size: 1.8rem; margin-bottom: 20px;"><i class="fas fa-map-marked-alt" style="color: var(--gold);"></i> Proximités</h3>
+                            <ul style="list-style: none; padding: 0; line-height: 2.2;">
+                                <li><i class="fas fa-walking" style="color: var(--gold); margin-right: 10px;"></i> Plage de Founty : 3 min à pied</li>
+                                <li><i class="fas fa-shopping-bag" style="color: var(--gold); margin-right: 10px;"></i> Commerces et supermarchés : 2 min</li>
+                                <li><i class="fas fa-utensils" style="color: var(--gold); margin-right: 10px;"></i> Restaurants et cafés : 5 min</li>
+                                <li><i class="fas fa-golf-ball" style="color: var(--gold); margin-right: 10px;"></i> Golf du Soleil : 10 min en voiture</li>
+                                <li><i class="fas fa-plane" style="color: var(--gold); margin-right: 10px;"></i> Aéroport Al Massira : 30 min</li>
+                                <li><i class="fas fa-school" style="color: var(--gold); margin-right: 10px;"></i> Écoles et collèges : 5 min</li>
+                                <li><i class="fas fa-hospital" style="color: var(--gold); margin-right: 10px;"></i> Clinique privée : 8 min</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- FORMULAIRE DE CONTACT -->
+                    <div id="contact-bien" style="background: var(--white); padding: 50px; border-radius: 12px; box-shadow: var(--shadow); margin-bottom: 40px;">
+                        <h3 style="font-family: var(--font-serif); font-size: 2rem; text-align: center; margin-bottom: 30px;">
+                            <i class="fas fa-pen" style="color: var(--gold);"></i> Vous souhaitez visiter cette villa ?
+                        </h3>
+                        <p style="text-align: center; color: var(--gray); margin-bottom: 30px;">Laissez-nous vos coordonnées, nous vous recontactons dans l'heure.</p>
+                        
+                        <form style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;" id="contactBienForm">
+                            <input type="text" name="name" placeholder="Votre nom" required style="padding: 15px; border: 1px solid #ddd; border-radius: 8px; font-family: var(--font-sans);" />
+                            <input type="email" name="email" placeholder="Votre email" required style="padding: 15px; border: 1px solid #ddd; border-radius: 8px; font-family: var(--font-sans);" />
+                            <input type="tel" name="phone" placeholder="Votre téléphone" required style="padding: 15px; border: 1px solid #ddd; border-radius: 8px; font-family: var(--font-sans);" />
+                            <select name="subject" required style="padding: 15px; border: 1px solid #ddd; border-radius: 8px; font-family: var(--font-sans); background: var(--white);">
+                                <option value="">Disponibilité pour visite</option>
+                                <option>Cette semaine</option>
+                                <option>La semaine prochaine</option>
+                                <option>Dans les 15 jours</option>
+                                <option>À définir</option>
+                            </select>
+                            <textarea name="message" rows="3" placeholder="Votre message (optionnel)" style="grid-column: 1 / -1; padding: 15px; border: 1px solid #ddd; border-radius: 8px; font-family: var(--font-sans);"></textarea>
+                            <button type="submit" class="btn-primary" style="grid-column: 1 / -1; justify-self: center; min-width: 250px;">
+                                <i class="fas fa-paper-plane"></i> Envoyer ma demande
+                            </button>
+                        </form>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 20px;">
+                        <a href="index.html#properties" class="btn-details" style="font-size: 1rem;">
+                            <i class="fas fa-arrow-left"></i> Retour à nos biens
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2>Immo<span>Colucci</span></h2>
+                    <p>L'élégance immobilière et la conciergerie d'exception.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Accueil</a>
+                    <a href="index.html#properties">Biens</a>
+                    <a href="index.html#services">Services</a>
+                    <a href="index.html#blog">Blog</a>
+                    <a href="index.html#about">À propos</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Immo Colucci. Tous droits réservés. | Conçu avec <span style="color:#C8A86E;">❤</span> par notre équipe</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactBienForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('✅ Merci ! Nous vous contactons dans les plus brefs délais pour organiser une visite.');
+            this.reset();
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

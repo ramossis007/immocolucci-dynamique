@@ -1,0 +1,119 @@
+/* ============================================================
+   PAGE DETAIL BIEN — Design System « Linear-inspired » (luxe)
+   ============================================================ */
+
+.page-banner-detail {
+    padding: 130px 0 20px;
+    background: var(--light-gray);
+    border-bottom: 1px solid var(--border-light);
+}
+.page-banner-detail .breadcrumb { color: var(--gray); font-size: 0.85rem; }
+.page-banner-detail .breadcrumb a { color: var(--gold); }
+.page-banner-detail .breadcrumb span { margin: 0 8px; }
+
+.detail-bien { padding: 60px 0 80px; background: var(--white); }
+.detail-grid { display: grid; grid-template-columns: 1.6fr 1fr; gap: 48px; margin-bottom: 48px; }
+
+.detail-gallery .gallery-main {
+    border-radius: 8px; overflow: hidden;
+    border: 1px solid var(--border-light);
+    margin-bottom: 14px; height: 480px; background: #f0f0f0;
+}
+.detail-gallery .gallery-main img { width: 100%; height: 100%; object-fit: cover; }
+.gallery-thumbs { display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 10px; }
+.gallery-thumbs img {
+    width: 100%; height: 80px; object-fit: cover; border-radius: 6px;
+    cursor: pointer; border: 2px solid transparent; opacity: 0.7; transition: var(--transition);
+}
+.gallery-thumbs img:hover, .gallery-thumbs img.active { border-color: var(--gold); opacity: 1; }
+
+.detail-info {
+    background: var(--white);
+    padding: 32px;
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    height: fit-content;
+}
+.detail-info .badge {
+    display: inline-block; position: static;
+    padding: 6px 14px; background: var(--gold); color: var(--dark);
+    border-radius: 4px; font-size: 0.7rem; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.5px;
+    margin-right: 8px; margin-bottom: 10px;
+}
+.detail-info .badge-rent { background: #2E7D32; color: #fff; }
+.detail-info .badge-vedette {
+    display: inline-block; position: static;
+    padding: 6px 14px; background: rgba(200,168,110,0.14); color: var(--gold);
+    border-radius: 4px; font-size: 0.7rem; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px;
+}
+.detail-info h1 { font-family: var(--font-serif); font-size: 2.2rem; font-weight: 500; color: var(--dark); margin: 15px 0 10px; line-height: 1.2; }
+.detail-location { color: var(--gray); font-size: 0.95rem; margin-bottom: 20px; }
+.detail-location i { color: var(--gold); margin-right: 6px; }
+.detail-price { font-family: var(--font-serif); font-size: 2.4rem; color: var(--gold); font-weight: 600; margin-bottom: 24px; }
+.detail-features {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+    border-top: 1px solid var(--border-light); padding-top: 22px;
+    margin-bottom: 24px; font-size: 0.9rem; color: var(--gray);
+}
+.detail-features div { display: flex; align-items: center; gap: 8px; }
+.detail-features strong { color: var(--dark); }
+.detail-features i { color: var(--gold); width: 20px; }
+.detail-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.detail-actions .btn-primary { flex: 1; text-align: center; min-width: 200px; }
+
+.detail-section {
+    margin-bottom: 32px; padding: 40px;
+    background: var(--light-gray);
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+}
+.detail-section h2 { font-family: var(--font-serif); font-size: 1.8rem; font-weight: 500; color: var(--dark); margin-bottom: 20px; }
+.detail-section h2 i { color: var(--gold); margin-right: 8px; }
+.detail-section h1 { font-size: 2.2rem; margin-bottom: 16px; color: var(--dark); }
+.service-detail-icon { font-size: 2.4rem; color: var(--gold); margin-bottom: 16px; }
+.detail-description { font-size: 1.05rem; line-height: 1.9; color: #333; }
+.equipements-list { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+.equipements-list li { display: flex; align-items: center; gap: 10px; font-size: 0.95rem; color: #333; }
+.equipements-list i { color: var(--gold); }
+
+.contact-bien { background: var(--dark); color: var(--white); border: none; }
+.contact-bien h2 { color: var(--white); text-align: center; }
+.contact-bien p { color: rgba(255,255,255,0.7); margin-bottom: 25px; text-align: center; }
+.contact-bien .contact-form { display: flex; flex-direction: column; gap: 15px; max-width: 700px; margin: 0 auto; }
+.contact-bien .form-row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+.contact-bien input, .contact-bien select, .contact-bien textarea {
+    padding: 14px 18px; border: 1px solid var(--border-dark); border-radius: 6px;
+    background: rgba(255,255,255,0.05); color: #fff; font-family: inherit; font-size: 0.95rem; width: 100%;
+    transition: var(--transition);
+}
+.contact-bien input::placeholder, .contact-bien textarea::placeholder { color: rgba(255,255,255,0.4); }
+.contact-bien input:focus, .contact-bien select:focus, .contact-bien textarea:focus { outline: none; border-color: var(--gold); background: rgba(255,255,255,0.1); }
+.contact-bien select option { color: var(--dark); background: #fff; }
+.contact-bien .btn-primary { background: var(--gold); color: var(--dark); align-self: center; min-width: 250px; }
+.contact-bien .btn-primary:hover { background: var(--gold-light); }
+
+.detail-back { text-align: center; padding-top: 20px; }
+.detail-back .btn-details {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 0.95rem; color: var(--dark);
+    padding: 12px 25px; border: 1px solid var(--border-light); border-radius: 6px;
+    transition: var(--transition);
+}
+.detail-back .btn-details:hover { border-color: var(--dark); }
+
+@media (max-width: 992px) {
+    .detail-grid { grid-template-columns: 1fr; gap: 30px; }
+    .detail-gallery .gallery-main { height: 350px; }
+    .detail-info h1 { font-size: 1.8rem; }
+    .detail-price { font-size: 2rem; }
+}
+@media (max-width: 768px) {
+    .detail-section { padding: 25px; }
+    .detail-features { grid-template-columns: 1fr; }
+    .contact-bien .form-row-2 { grid-template-columns: 1fr; }
+    .equipements-list { grid-template-columns: 1fr; }
+    .detail-gallery .gallery-main { height: 260px; }
+    .page-banner-detail { padding: 110px 0 15px; }
+}

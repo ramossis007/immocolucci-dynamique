@@ -1,0 +1,13 @@
+﻿# Protection des fichiers et dossiers sensibles
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Bloquer les fichiers cachés (.env, .git, etc.)
+    RewriteRule ^\. - [F,L]
+
+    # Bloquer l'accès direct au code applicatif et à la base de données
+    # (admin/ est laissé accessible car c'est le back-office)
+    RewriteRule ^(app|database|design)(/|$) - [F,L]
+</IfModule>
